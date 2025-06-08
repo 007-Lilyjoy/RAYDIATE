@@ -53,6 +53,7 @@ body{
         margin-left: auto;
     }
 }
+
 .herosection{
     background-image: url(images/Screenshot\ 2025-06-08\ 102822.png);
     background-size: cover;
@@ -91,3 +92,80 @@ body{
 .getsolarbutton :hover{
     background: #e4ab00;
 }
+@media (max-width:1200px){
+   .tagline{
+    font-size: 20px;
+    line-height: 1.5;
+   }
+   .getsolarbutton{
+    padding: 8px;
+   }
+}
+.aboutsection{
+    background-image: url(images/Screenshot\ 2025-06-08\ 114927.png);
+    background-size: cover;
+    height: 180vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: black;
+}
+.about{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.aboutheading{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 6px 8px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.originheading{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.aboutparagraph{
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.aboutlogo{
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    width: 60px;
+    height: auto;
+}
+@media (max-width:1200px){
+    .aboutsection{
+        height: 150vh;
+    }
+    .aboutheading{
+        font-size: 20px;
+        top: 5px;
+        left: 5px;
+        margin-right: 50px;
+    }
+    .originheading{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .aboutparagraph{
+        font-size: 18px;
+    }
+    .aboutlogo{
+        display: none;
+    }
+}
+
