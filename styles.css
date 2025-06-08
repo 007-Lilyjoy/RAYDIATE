@@ -1,0 +1,49 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigationbar{
+    background-color:#AEC4F3;
+    padding: 0px 0px;
+}
+.navigationbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.navigationlinks{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-left: auto;
+}
+.navigationlinks li a{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .navigationlinks{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .navigationlinks.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+}
