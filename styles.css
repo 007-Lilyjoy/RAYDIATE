@@ -1,5 +1,11 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
 }
 .navigationbar{
     background-color:#AEC4F3;
@@ -46,4 +52,42 @@ body{
         display: block;
         margin-left: auto;
     }
+}
+.herosection{
+    background-image: url(images/Screenshot\ 2025-06-08\ 102822.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.hero{
+    text-align: left;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+.raydiate{
+    margin-bottom: 5px;
+    font-weight: 1800px;
+    font-size: 90px;
+}
+.tagline{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-size: bold;
+}
+.getsolarbutton{
+    background-color: #FFCC33;
+    color: black;
+    padding: 14px;
+    font-weight: 200;
+    border-radius: 28px;
+    text-decoration: none;
+    transition: background 0.4s ease;
+}
+.getsolarbutton :hover{
+    background: #e4ab00;
 }
