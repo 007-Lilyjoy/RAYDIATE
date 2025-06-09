@@ -35,3 +35,41 @@ audiencebtns.forEach(btn => {
         document.getElementById(target).classList.add('active')
     });
 });
+
+
+const form = document.getElementById('contactform');
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name');
+    const phonenumber = document.getElementById('phonenumber');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+
+    let isValid = true;
+    [name, phonenumber, email, message].forEach(input => input.classList.remove('error'));
+
+    if(!name.value.trim()) {
+        name.classList.add('error');
+        isValid = false;
+    }
+    if(!phonenumber.value.trim()) {
+        phonenumber.classList.add('error');
+        isValid = false;
+    }
+    if(!email.value.trim() || !/^\S+@\S+\.\S+&/.test(email.value)) {
+        email.classList.add('error');
+        isValid = false;
+    }
+    if(!message.value.trim()) {
+        message.classList.add('error');
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert("Your message was sent successfully");
+        form.reset();
+    } else{
+        alert(you must type something)
+    }
+});

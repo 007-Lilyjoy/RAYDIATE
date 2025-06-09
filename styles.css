@@ -303,5 +303,50 @@ body{
     display: block;
     transform: translateY(0);
 }
+.contactsection{
+    background-color: #AEC4F3;
+}
+
+.formheading{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 19px;
+}
+.reachout{
+    width: 400px;
+    padding: 10px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.entry{
+    margin-bottom: 16px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input,textarea{
+    width: 700px;
+    padding: 12px;
+    background-color: antiquewhite;
+    border: none;
+    font-size: 15px;
+}
+.textarea{
+    height: 500px;
+}
+.submitbutton{
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px 40px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-weight: 600;
+}
+.closingform{
+    text-align: center;
+    margin-top: 10px ;
+}
+
 
 
