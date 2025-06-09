@@ -231,6 +231,11 @@ body{
 .faq{
     padding: 64px;
 }
+.faqsheading{
+    padding: 24px;
+    background-color: #AEC4F3;
+    text-decoration: underline;
+}
 .faqs h2{
     text-align: center;
     font-size: 32px;
@@ -355,6 +360,7 @@ input,textarea{
 .teamsection{
     background: linear-gradient(to bottom, #ffe680, #f4a836);
     text-align: center;
+    padding: 60px;
 }
 .teamheading{
     font-size: 48px;
@@ -364,7 +370,7 @@ input,textarea{
 .team{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 .members{
