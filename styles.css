@@ -390,5 +390,40 @@ input,textarea{
         align-items: center;
     }
 }
+.brandbarsection{
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    background-color: #AEC4F3;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+}
+.brandbar{
+    flex: 0 0 auto;
+    min-width: 230px;
+    background-color: #F5EBDD;
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 30px;
+    font-weight: 600;
+    scroll-snap-align: center;
+}
+@media(min-width: 768px) {
+    .brandbar{
+        flex: 0 0 40%;
+        padding: 90px 80px;
+    }
+}
+
+
+    
+        
+    
+    
+
+
 
 
