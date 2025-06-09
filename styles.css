@@ -150,7 +150,7 @@ body{
 }
 @media (max-width:1200px){
     .aboutsection{
-        height: 150vh;
+        height: 180vh;
     }
     .aboutheading{
         font-size: 20px;
