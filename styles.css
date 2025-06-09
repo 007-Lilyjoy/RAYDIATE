@@ -475,9 +475,13 @@ input,textarea{
 }
 .aichatbot{
     background-image: url('images/Screenshot\ 2025-06-07\ 184640.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 .chatbot{
-    width: 420px;
+    width: 100%;
+    max-width: 500px;
     background: #FAF4E6;
     overflow: hidden;
     border-radius: 15px;
@@ -534,6 +538,7 @@ input,textarea{
 .message-user-message .message-text{
     background-color: white;
     align-self: flex-end;
+    padding: 14px;
 }
 .chat-input{
     display: flex;
@@ -558,6 +563,25 @@ input,textarea{
 .invite{
     text-align: left;
 }
+@media (max-width:1200px){
+    .chatbot{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .chat-body{
+        height: 400px;
+    }
+    .chat-input{
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+ 
+    
+        
+    
+    
  
 
 

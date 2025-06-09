@@ -266,14 +266,14 @@
         <div class="chatbot">
             <div class="chatbotheader">
                 <div class="headerinfo">
-                    <img class="chatbotlogo" src="images/Screenshot 2025-06-06 165017.png" alt="">
+                    <img class="chatbotlogo" src="images/Screenshot 2025-06-06 165017.png" alt="chatbot logo">
                     <h2 class="chatbotheading">AI RAYBOT</h2>
                 </div>
             </div>
 
-            <div class="chat-body">
+            <div class="chat-body" id="chat-body">
                 <div class="message-bot-message">
-                    <img class="chatbotlogo" src="images/Screenshot 2025-06-06 165017.png" alt="">
+                    <img class="chatbotlogo" src="images/Screenshot 2025-06-06 165017.png" alt="chatbot logo">
                     <div class="message-text">
                         <p>Hey there! Welcome to AI Raybot <br> What can i help you with?</p>
                     </div>
@@ -288,7 +288,13 @@
                 <button onclick="sendMessage()">Send</button>
             </div>
         </div>
-
+        <div class="sample-questions">
+            <button onclick="setSample('Who is the founder of RayDiate?')">Who is the founder of RayDiate?</button>
+            <button onclick="setSample('What products do you offer?')">What products do you offer?</button>
+            <button onclick="setSample('What is the mission of RayDiate?')">What is the mission of RayDiate?</button>
+            <button onclick="setSample('What is the origin of RayDiate')">What is the origin of RayDiate</button>
+            <button onclick="setSample('Who are the team members of RayDiate?')">Who are the team members of RayDiate?</button>
+        </div>
     </section>
     <section class="contactsection" id="contacts">
         <div class="contactbox">
@@ -337,6 +343,7 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://js.puter.com/v2/"></script>
 </body>
 
 </html>
