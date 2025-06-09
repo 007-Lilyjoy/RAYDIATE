@@ -347,6 +347,48 @@ input,textarea{
     text-align: center;
     margin-top: 10px ;
 }
-
+.teamsection{
+    background: linear-gradient(to bottom, #ffe680, #f4a836);
+    text-align: center;
+}
+.teamheading{
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.members{
+    max-width: 180px;
+}
+.members img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+.teamname{
+    font-size: 15px;
+}
+.funfact{
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.teamclosing{
+    font-style: italic;
+    color: white;
+}
+@media (max-width: 600px) {
+    .team{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
