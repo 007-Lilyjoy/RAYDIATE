@@ -73,3 +73,19 @@ form.addEventListener('submit', function (e) {
         alert(you must type something)
     }
 });
+
+letvisitCount = localStorage.getItem('visitCount');
+if(!visitCount) {
+    visitCount = 1500;
+}else{
+    visitCount = parseInt(visitCount) +1;
+}
+
+localStorage.setItem('visitCount',visitCount);
+
+document.addEventListener('DOMContentLoaded',() => {
+    const counterElement = document.querySelector('#footercount');
+    if(counterElement){
+        counterElement.textContent = `${footercount}+visitors`;
+    }
+    });

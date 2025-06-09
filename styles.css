@@ -306,6 +306,11 @@ body{
 .contactsection{
     background-color: #AEC4F3;
 }
+.contactbox{
+    background-color: #FFCC33;
+    width: 900px;
+    margin:  auto;
+}
 
 .formheading{
     text-align: center;
@@ -326,7 +331,7 @@ label{
     margin-bottom: 5px;
 }
 input,textarea{
-    width: 700px;
+    width: 700px;   a
     padding: 12px;
     background-color: antiquewhite;
     border: none;
