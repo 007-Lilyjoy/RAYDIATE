@@ -228,6 +228,80 @@ body{
     padding: 50px;
     background-color: #FFCC33;
 }
+.faq{
+    padding: 64px;
+}
+.faqs h2{
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+}
+.faqsection{
+    border-bottom: 1px solid #ddd;
+    background-color: #AEC4F3;
+}
+.faq-question{
+    background-color: #FFCC33;
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
 
+}
+.faq-question :hover{
+    color: #f5a623;
+}
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    font-size: 24px;
+    padding: 0 1rem;
+}
+.faq-answer p{
+    margin: 0 0 8px;
+}
+.audiencetoggle{
+    text-align: center;
+    background: #F5EBDD;
+    padding: 64px 16px;
+}
+.toggleheading{
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.togglebuttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.audiencebtn{
+    padding: 7px 15px;
+    background-color: #FFCC33;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.audiencebtn.active{
+    background-color: #AEC4F3;
+    font-weight: 400;
+}
+.audiencebox{
+    max-width: 800px;
+}
+.toggle{
+    display: none;
+    transform: translateY(10px);
+    transition: all 0.6s ease;
+}
+.toggle.active{
+    display: block;
+    transform: translateY(0);
+}
 
 

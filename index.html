@@ -125,6 +125,27 @@
             </div>
         </div>
     </section>
+     <section class="audiencetoggle">
+            <h2 class="toggleheading">RayDiate For You</h2>
+            <div class="togglebuttons">
+                <button class="audiencebtn" data-target="students">Students</button>
+                <button class="audiencebtn" data-target="mentors">Mentors</button>
+            </div>
+            <div class="audiencebox">
+                <div class="toggle" id="students">
+                    <h3 class="studentsheading">Empowering students</h3>
+                    <p>
+                        Access our solar kits, get empowering lessons on sustainable development and get an amazing oppurtunity to be brand ambassadors in your home communities. Only at Radiate.
+                    </p>
+                </div>
+                <div class="toggle" id="mentors">
+                    <h3 class="mentorsheading">Supporting Mentors</h3>
+                    <p>
+                        Get all the resources required to teach and expand people's knowledge on the importance of utilizing clean energy. Together let us make the planet more habitable.
+                    </p>
+                </div>
+            </div>
+        </section>
     <section class="testimonials" id="testimonials">
         <div class="testimonialheading">
             <h2>CLIENTS' TESTIMONIALS</h2>
@@ -161,38 +182,64 @@
         </div>
     </section>
     <section class="faqs">
-        <h2>Frequently Asked Questions</h2>
+        <h2 class="faqsheading">Frequently Asked Questions</h2>
         <div class="faqsection">
-            <button class="faquiz">
+            <button class="faq-question">
                 Should one have technical knowledge to use the products?
             </button>
-            <div class="response">
+            <div class="faq-answer">
                 <p>
-                    No. Our products are plug and play meaning you simply just need to place the panels in the sun and use the stored energy without difficulty.
+                    NO. Our products are plug and play meaning you simply just need to place the panels in the sun and use the stored energy without difficulty.
                 </p>
             </div>
         </div>
         <div class="faqsection">
-            <button class="faquiz">
+            <button class="faq-question">
                 Are the solar products weather resistant?
             </button>
-            <div class="response">
+            <div class="faq-answer">
                 <p>
-                    Yes. Our products are built to withstand typical weather conditions. This makes them durable and long lasting for outdoor purposes.
+                    YES. Our products are built to withstand typical weather conditions. This makes them durable and long lasting for outdoor purposes.
                 </p>
             </div>
         </div>
         <div class="faqsection">
-            <button class="faquiz">
-                Should one have technical knowledge to use the products?
+            <button class="faq-question">
+                Do you offer warranties or guarantees?
             </button>
-            <div class="response">
+            <div class="faq-answer">
                 <p>
-                    No. Our products are plug and play meaning you simply just need to place the panels in the sun and use the stored energy without difficulty.
-                </p>
+                    YES.All our products have a 12 month warranty which cover manufacturer defects and performance issues.                </p>
             </div>
         </div>
     </section>
+    <section class="contactsection" id="contacts">
+        <div class="contactbox">
+            <h2 class="formheading">CONTACT FORM</h2>
+            <h3 class="reachout">REACH OUT TO ONE OF US TODAY</h3>
+            <form id="contactform">
+                <div class="entry">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="entry">
+                    <label for="phone number">Phone number</label>
+                    <input type="text" id="phonenumber" name="phonenumber" required />
+                </div>
+                <div class="entry">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="entry">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message">required></textarea>
+                </div>
+                <button type="submit" class="submitbutton">SUBMIT</button>
+            </form>
+            <p class="closingform">Your Satisfaction is Our Greatest Pride</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
