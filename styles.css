@@ -417,6 +417,57 @@ input,textarea{
         padding: 90px 80px;
     }
 }
+.footersection{
+    background-color: #FAF4E6;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 40px 20px 20px;
+}
+.leftside, .rightside{
+    flex: 1;
+}
+.footerlogo{
+    width: 35px;
+    margin-bottom: 10px;
+}
+.footersection a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footersection A:hover{
+    text-decoration: underline;
+}
+.bottom{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    flex-wrap: wrap;
+    align-items: right;
+}
+.leftside img{
+    top: 30px;
+}
+.leftside{
+    margin-top: 0px;
+}
+.rightside{
+    margin-top: 20px;
+}
+@media(min-width:768px) {
+    .footer{
+       flex-direction: row; 
+    }
+}
 
 
     
