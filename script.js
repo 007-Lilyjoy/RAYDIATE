@@ -92,31 +92,18 @@ document.addEventListener('DOMContentLoaded', function () {
    let puterInitialized = false;
 
 const CONTEXT = `RayDiate was born out of a simple wish to ensure that all individuals could access energy without any limitations of where they come from.
-
 RayDiate was founded by Lilyjoy Kinya Njagi. She had grown up in a small town where power failure was always a concern.
-
 This issue would lead to very unproductive days and missing deadlines that were only possible to deliver by the presence of power.
-
 It was also a very big inconvenience to people who worked remotely or students who wanted to study late at night.
-
 She knew that this issue did not only affect her but majority of other people who lacked an alternative way of accessing power.
-
 Ever since she grew up with the desire to make a difference in this sector. She always held deep in her heart that energy should be a basic human need and no one
-
 should have to miss opportunities because of the lack of it.
-
 Our mission at RayDiate is to provide accessible, reliable and affordable solar solutions to those who need it most, students
-
 longing to study hard during nighttime, families, businesses and basically everyone.
-
 We provide several products. We have Home solar systems, which are fitted on the rooftops of houses to provide power for everyday use.
-
 We have Portable solar panels which are lightweight and durable, making them ideal for travelling, camping or even for emergency cases.
-
 We also have lanterns which have auto sensor lights and store up energy during the day and provide energy at night.
-
 Our team consists of Lilyjoy Kinya Njagi, who is the founder and vision lead. We also have Linet Mwende Boniface, who is the operations manager and
-
 Raim Wambugu who is the marketing lead.`;
 
 let conversationHistory = [];
@@ -203,18 +190,21 @@ Client: ${userMessage}
 RayDiate:`;
 
     const reply = await puter.ai.chat(fullPrompt, {
-        model: 'gpt-4o-mini',
-        temperature: 0.7,
-        max_tokens: 500
-    });
+    model: 'gpt-4o-mini',
+    temperature: 0.7,
+    max_tokens: 500
+});
+console.log ("Raw AI Reply:", reply.message?.content|| reply.choices?.[0]?.message?.content);
 
-    if (reply?.choices?.[0]?.message?.content) {
-    return reply.choices[0].message.content;
-} else if (typeof reply === "string") {
-    return reply;
+const aiText = reply?.message?.content;
+if (typeof aiText === "string") {
+    return aiText;
 } else {
-    return JSON.stringify(reply); // Fallback: convert any object to string
+    console.error("Unexpected AI structure:", reply);
+    return "⚠ I couldn't understand the response. Please try again.";
 }
+
+
 
 }
 
