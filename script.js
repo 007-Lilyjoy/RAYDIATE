@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     
-    // FAQ Accordion toggle logic
+    
     const questions = document.querySelectorAll('.faq-question');
     questions.forEach((question) => {
         question.addEventListener('click', () => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Audience buttons toggle logic
+
     const audiencebtns = document.querySelectorAll('.audiencebtn');
     const toggle = document.querySelectorAll('.toggle');
     audiencebtns.forEach(btn => {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Contact form validation and submission
+    
     const form = document.getElementById('contactform');
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Visitor counter stored in localStorage
+    
     let visitCount = localStorage.getItem('visitCount');
     if (!visitCount) {
         visitCount = 1500;
@@ -126,7 +126,7 @@ function addMessage(text, isUser) {
     chatBody.scrollTop = chatBody.scrollHeight;
 }
 
-// Wait for Puter SDK to be ready
+
 async function waitForPuter(maxWait = 5000) {
     const start = Date.now();
     return new Promise((resolve, reject) => {
@@ -143,7 +143,7 @@ async function waitForPuter(maxWait = 5000) {
     });
 }
 
-// Initialize Puter
+
 async function initializePuter() {
     if (puterInitialized) return;
 
@@ -151,7 +151,7 @@ async function initializePuter() {
         console.log('🔄 Connecting to AI...');
 
         const puter = await waitForPuter();
-        console.log('✅ Puter loaded successfully!');
+        console.log(' Puter loaded successfully!');
 
         const testResponse = await puter.ai.chat('Hello, this is a connection test.', {
             model: 'gpt-4o-mini',
@@ -159,19 +159,19 @@ async function initializePuter() {
             max_tokens: 30
         });
 
-        console.log('✅ Puter AI test successful:', testResponse);
+        console.log(' Puter AI test successful:', testResponse);
 
         puterInitialized = true;
 
-        addMessage("✨ AI connection established. Ask anything about RayDiate!", false);
+        addMessage(" AI connection established. Ask anything about RayDiate!", false);
 
     } catch (error) {
-        console.error('❌ Puter initialization failed:', error);
-        addMessage("⚠ Unable to connect. Please try again later.", false);
+        console.error(' Puter initialization failed:', error);
+        addMessage(" Unable to connect. Please try again later.", false);
     }
 }
 
-// Call Puter AI with history
+
 async function callPuterAI(userMessage) {
     if (!puterInitialized) {
         throw new Error('Puter not initialized');
@@ -231,13 +231,15 @@ document.getElementById("send-button").addEventListener("click", async () => {
     }
 });
 
-// Support sample question buttons
+
 function setSample(text) {
     const input = document.getElementById("user-input");
     input.value = text;
     input.focus();
+
+    sendUserMessage('text')
 }
 
-// Initialize Puter when the page loads
+
 window.addEventListener("load", initializePuter);
 })
